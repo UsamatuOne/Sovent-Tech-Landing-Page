@@ -1,0 +1,305 @@
+/*
+   =====================================================
+   =====================================================
+   ===================================================== 
+   */
+
+/* ==============================
+   COLOR VARIABLES (LOCKED)
+   ============================== */
+
+:root {
+    /* Brand (Blue Logo & CTA) */
+    --color-brand-blue: #22D3EE;
+    /* Logo, buttons, active links */
+    --color-accent: #00b7d3;
+    /* Small highlights only */
+
+    /* Layout */
+    --color-bg-page: #0A0F1F;
+    /* Main page background */
+    --color-bg-navbar: #111827;
+    /* Navbar background */
+    --color-bg-section: #0F172A;
+    /* Cards & sections */
+
+    /* Text */
+    --color-text-heading: #FFFFFF;
+    --color-text-body: #CBD5E1;
+    --color-text-muted: #94A3B8;
+
+    /* Borders */
+    --color-border: rgba(255, 255, 255, 0.06);
+}
+
+/* ==============================
+   GLOBAL STYLES
+   ============================== */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    background-color: var(--color-bg-page);
+    color: var(--color-text-body);
+    font-family: "Inter", sans-serif;
+    line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-text-heading);
+    font-weight: 600;
+}
+
+p {
+    color: var(--color-text-body);
+}
+
+small {
+    color: var(--color-text-muted);
+}
+
+a {
+    color: var(--color-brand-blue);
+    text-decoration: none;
+    transition: color 0.85s ease;
+}
+
+a:hover {
+    color: var(--color-accent) !important;
+}
+
+/* ==============================
+  NAVBAR 
+   ============================== */
+
+.navbar {
+    border-bottom: 1px solid var(--color-border);
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    background-color: transparent !important;
+    /* backdrop-filter: blur(100rem); */
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    background-image: url(./images/logo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar-small-close {
+    /* background: linear-gradient(180deg, #0a0f1f, #050814); */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition:
+        max-height 0.85s ease,
+        opacity 0.85s ease,
+        transform 0.85s ease;
+}
+
+@media (min-width: 992px) {
+    .navbar-small-close {
+        display: none !important;
+    }
+}
+
+.navbar-small-open {
+    max-height: 300px;
+    opacity: 1;
+    transform: translateY(0);
+    /* background-color: transparent;
+    backdrop-filter: blur(100rem); */
+}
+
+.get-s-btn {
+    background-color: var(--color-brand-blue);
+    color: var(--color-text-heading);
+    padding: 7px 25px;
+    border-radius: 1rem;
+    transition: all 0.3s ease-out;
+}
+
+.get-s-btn-sm {
+    background-color: var(--color-brand-blue);
+    color: var(--color-text-heading);
+    padding: 2px 2px;
+    border-radius: 1rem;
+    width: 100px;
+    margin-left: 1rem;
+    transition: all 0.3s ease-out;
+}
+
+.get-s-btn-hover {
+    background-color: var(--color-accent);
+    color: var(--color-text-heading);
+    scale: 1.05;
+    cursor: pointer;
+}
+
+.get-s-btn-sm:hover {
+    background-color: var(--color-accent);
+    color: var(--color-text-heading);
+    cursor: pointer;
+}
+
+#bar-btn {
+    border: none;
+    background: none;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    color: var(--color-text-heading) !important;
+    color: var(--color-text-heading);
+}
+
+.navbar-nav .nav-link {
+    color: var(--color-text-heading);
+    font-weight: 500;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--color-accent);
+}
+
+/* ==============================
+   HERO
+   ============================== */
+.hero-bg {
+    background-image: url(./images/hero-img.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    opacity: 0.9;
+}
+
+/* ==============================
+   SECTIONS
+   ============================== */
+
+section {
+    padding: 100px 0;
+}
+
+.bg-section {
+    background-color: var(--color-bg-section);
+}
+
+/* ==============================
+   BUTTONS
+   ============================== */
+
+.btn-brand {
+    background-color: var(--color-brand-blue);
+    color: #ffffff;
+    padding: 12px 30px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-brand:hover {
+    background-color: #2563EB;
+    transform: translateY(-2px);
+}
+
+.btn-outline-brand {
+    background: transparent;
+    border: 1px solid var(--color-brand-blue);
+    color: var(--color-brand-blue);
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-brand:hover {
+    background-color: var(--color-brand-blue);
+    color: #ffffff;
+}
+
+/* ==============================
+   ACCENT ELEMENTS (MINIMAL)
+   ============================== */
+
+.text-accent {
+    color: var(--color-accent);
+}
+
+.section-line {
+    width: 60px;
+    height: 3px;
+    background-color: var(--color-accent);
+    margin-bottom: 16px;
+}
+
+/* ==============================
+   CARDS
+   ============================== */
+
+.card-dark {
+    background-color: var(--color-bg-section);
+    border: 1px solid var(--color-border);
+    border-radius: 14px;
+    padding: 32px;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-dark:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+/* ==============================
+   FORMS
+   ============================== */
+
+input,
+textarea {
+    background-color: var(--color-bg-section);
+    border: 1px solid var(--color-border);
+    color: var(--color-text-body);
+    padding: 12px 14px;
+    border-radius: 6px;
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--color-brand-blue);
+    outline: none;
+}
+
+/* ==============================
+   FOOTER
+   ============================== */
+
+footer {
+    background-color: var(--color-bg-navbar);
+    border-top: 1px solid var(--color-border);
+    padding: 40px 0;
+}
