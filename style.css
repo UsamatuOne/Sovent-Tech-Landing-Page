@@ -155,11 +155,11 @@ a:hover {
     cursor: pointer;
 }
 
-.get-s-btn-sm:hover {
+/* .get-s-btn-sm-hover {
     background-color: var(--color-accent);
     color: var(--color-text-heading);
     cursor: pointer;
-}
+} */
 
 #bar-btn {
     border: none;
@@ -193,7 +193,54 @@ a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    opacity: 0.9;
+    opacity: 0.95;
+}
+
+.hero-title {
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+.s-hero-title {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 2.9rem;
+    font-weight: 100;
+}
+
+.s-hero-text {
+    font-size: 1rem;
+    color: var(--color-text-body);
+}
+
+.hero-title-btn1 {
+    background-color: var(--color-text-heading);
+    width: 200px;
+    height: 70px;
+    border-radius: 5rem;
+    transition: all 0.3s ease-out;
+    margin: 3px;
+}
+
+.hero-title-btn1-hover {
+    background-color: var(--color-text-body);
+    scale: 1.03;
+}
+
+.hero-title-btn2 {
+    background-color: transparent;
+    border: solid 3px var(--color-text-heading);
+    width: 200px;
+    height: 70px;
+    border-radius: 5rem;
+    color: var(--color-text-heading);
+    margin: 3px;
+    transition: all 0.75s;
+}
+
+.hero-title-btn2-hover {
+    opacity: 1;
+    background-color: var(--color-text-heading);
 }
 
 /* ==============================
