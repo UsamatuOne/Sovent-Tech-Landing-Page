@@ -116,12 +116,6 @@ a:hover {
         transform 0.85s ease;
 }
 
-@media (min-width: 992px) {
-    .navbar-small-close {
-        display: none !important;
-    }
-}
-
 .navbar-small-open {
     max-height: 300px;
     opacity: 1;
@@ -349,4 +343,108 @@ footer {
     background-color: var(--color-bg-navbar);
     border-top: 1px solid var(--color-border);
     padding: 40px 0;
+}
+
+/* AT MEDIA QUERY SECTION */
+
+/* navbar media query */
+@media (min-width: 992px) {
+    .navbar-small-close {
+        display: none !important;
+    }
+
+}
+
+/* hero section media query */
+@media (max-width: 992px) {
+    .hero-bg {
+        background-image: url(./images/hero-img2.png);
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+        font-weight: 900;
+    }
+
+    .s-hero-title {
+        font-size: 2rem;
+    }
+
+    .s-hero-text {
+        font-size: 0.7rem;
+    }
+
+    .hero-title-btn1 {
+        width: 150px;
+        height: 60px;
+        border-radius: 3rem;
+        margin: 2px;
+    }
+
+    .hero-title-btn2 {
+        width: 150px;
+        height: 60px;
+        border-radius: 3rem;
+        margin: 2px;
+    }
+}
+
+@media (max-width:600px) {
+    .hero-title {
+        font-size: 2.5rem;
+        font-weight: 900;
+    }
+
+    .s-hero-title {
+        font-size: 1.5rem;
+    }
+
+    .s-hero-text {
+        font-size: 0.6rem;
+    }
+
+
+    .hero-title-btn1 {
+        width: 140px;
+        height: 50px;
+        border-radius: 3rem;
+        margin: 2px;
+    }
+
+    .hero-title-btn2 {
+        width: 140px;
+        height: 50px;
+        border-radius: 3rem;
+        margin: 2px;
+    }
+}
+
+@media (max-width:486px) {
+    .hero-title {
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    .s-hero-title {
+        font-size: 1rem;
+    }
+
+    .s-hero-text {
+        font-size: 0.5rem;
+    }
+
+
+    .hero-title-btn1 {
+        width: 150px;
+        height: 40px;
+        border-radius: 3rem;
+        margin: 2px;
+    }
+
+    .hero-title-btn2 {
+        width: 150px;
+        height: 40px;
+        border-radius: 3rem;
+        margin: 2px;
+    }
 }
