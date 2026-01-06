@@ -422,16 +422,16 @@ footer {
 
 @media (max-width:486px) {
     .hero-title {
-        font-size: 2rem;
+        font-size: 2.2rem;
         font-weight: 900;
     }
 
     .s-hero-title {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .s-hero-text {
-        font-size: 0.5rem;
+        font-size: 0.7rem;
     }
 
     .btn-div {
@@ -444,14 +444,14 @@ footer {
     .hero-title-btn1 {
         width: 150px;
         height: 40px;
-        border-radius: 3rem;
+        border-radius: 1rem;
         margin: 2px;
     }
 
     .hero-title-btn2 {
         width: 150px;
         height: 40px;
-        border-radius: 3rem;
+        border-radius: 1rem;
         margin: 2px;
     }
 }
