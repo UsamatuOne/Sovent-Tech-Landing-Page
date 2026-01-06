@@ -359,6 +359,7 @@ footer {
 @media (max-width: 992px) {
     .hero-bg {
         background-image: url(./images/hero-img2.png);
+        height: 80vh;
     }
 
     .hero-title {
@@ -433,6 +434,12 @@ footer {
         font-size: 0.5rem;
     }
 
+    .btn-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
     .hero-title-btn1 {
         width: 150px;
