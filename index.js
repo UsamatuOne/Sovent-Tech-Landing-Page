@@ -13,6 +13,7 @@ const navBar = document.querySelector('.navbar-small-close');
 
 barBtn.addEventListener('click', () => {
     navBar.classList.toggle("navbar-small-open")
+    bgLogic.classList.toggle("hidden-background-open-nav");
 })
 
 // get started button logic
@@ -37,6 +38,18 @@ getsBtnSm.addEventListener('mouseout', () => {
     getsBtnSm.classList.toggle('get-s-btn-hover')
 })
 
+// hidden background close navbar logic
+const bgLogic = document.querySelector('.hidden-background');
+// const bgLogicOpenNav = document.querySelector('.hidden-background-open-nav');
+
+bgLogic.addEventListener('click', () => {
+    if (navBar.classList.toggle("navbar-small-open")) {
+        !navBar.classList.toggle("navbar-small-open")
+    }
+    if (bgLogic.classList.toggle("hidden-background-open-nav")) {
+        !bgLogic.classList.toggle("hidden-background-open-nav")
+    }
+})
 
 /*
    =====================================================
@@ -44,12 +57,7 @@ getsBtnSm.addEventListener('mouseout', () => {
    ===================================================== 
    */
 
-// background omage size small screen logic
-const heroBg = document.querySelector('.hero-bg');
 
-if (window.innerWidth <= 992 + "px") {
-    heroBg.style.backgroundImage.src = url('images/hero-img.png2');
-}
 
 // button 1 logic
 
