@@ -42,7 +42,7 @@
 }
 
 html {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 body {
@@ -57,19 +57,18 @@ body {
 .hidden-background {
     background-color: black;
     display: flex;
-    top: 0;
-    right: 0;
-    left: 0;
-    position: absolute;
-    height: 100vh;
+    position: fixed;
+    inset: 0;
     z-index: 9;
     opacity: 0;
     transition: all 0.75s;
+    pointer-events: none;
 }
 
 .hidden-background-open-nav {
     background-color: black;
     opacity: 0.5;
+    pointer-events: auto;
 }
 
 h1,
@@ -83,7 +82,7 @@ h6 {
 }
 
 p {
-    color: var(--color-text-body);
+    color: rgb(102, 88, 88);
 }
 
 small {
@@ -105,11 +104,11 @@ a:hover {
    ============================== */
 
 .navbar {
-    border-bottom: 1px solid var(--color-border);
     padding: 16px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    background-color: transparent !important;
-    /* backdrop-filter: blur(100rem); */
+    top: 0;
+    position: fixed;
+    width: 100%;
+    transition: background-color 0.3s ease;
     z-index: 10;
 }
 
@@ -123,7 +122,6 @@ a:hover {
 }
 
 .navbar-small-close {
-    /* background: linear-gradient(180deg, #0a0f1f, #050814); */
     position: absolute;
     top: 100%;
     left: 0;
@@ -144,8 +142,7 @@ a:hover {
     max-height: 300px;
     opacity: 1;
     transform: translateY(0);
-    /* background-color: transparent;
-    backdrop-filter: blur(100rem); */
+    padding: 0 0 1rem 0;
 }
 
 .get-s-btn {
@@ -173,12 +170,6 @@ a:hover {
     cursor: pointer;
 }
 
-/* .get-s-btn-sm-hover {
-    background-color: var(--color-accent);
-    color: var(--color-text-heading);
-    cursor: pointer;
-} */
-
 #bar-btn {
     border: none;
     background: none;
@@ -186,12 +177,11 @@ a:hover {
 
 .navbar-brand {
     font-weight: 600;
-    color: var(--color-text-heading) !important;
     color: var(--color-text-heading);
 }
 
 .navbar-nav .nav-link {
-    color: var(--color-text-heading);
+    color: #FFFFFF;
     font-weight: 500;
     margin-left: 20px;
     transition: color 0.3s ease;
@@ -238,12 +228,12 @@ a:hover {
     height: 70px;
     border-radius: 5rem;
     transition: all 0.3s ease-out;
-    margin: 3px;
+    margin: 10px;
 }
 
-.hero-title-btn1-hover {
-    background-color: var(--color-text-body);
+.hero-title-btn1:hover {
     scale: 1.03;
+    cursor: pointer;
 }
 
 .hero-title-btn2 {
@@ -253,13 +243,44 @@ a:hover {
     height: 70px;
     border-radius: 5rem;
     color: var(--color-text-heading);
-    margin: 3px;
+    margin: 10px;
     transition: all 0.75s;
 }
 
-.hero-title-btn2-hover {
+.hero-title-btn2:hover {
     opacity: 1;
     background-color: var(--color-text-heading);
+    cursor: pointer;
+    color: var(--color-bg-page);
+}
+
+/* ==============================
+   HERO
+   ============================== */
+#about {
+    background-color: whitesmoke;
+}
+
+#about h6 {
+    color: var(--color-brand-blue);
+    margin: 0 0 2rem 0;
+}
+
+#about h2 {
+    font-weight: bold;
+    font-size: 50px;
+    color: black;
+    font-family: 'Playfair Display', serif;
+}
+
+.contact-num-con {
+    color: var(--color-bg-page);
+}
+
+.contact-num-con .pro-num {
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--color-brand-blue);
 }
 
 /* ==============================
@@ -384,7 +405,7 @@ footer {
 @media (max-width: 992px) {
     .hero-bg {
         background-image: url(./images/hero-img2.png);
-        height: 80vh;
+        height: 90vh;
     }
 
     .hero-title {
