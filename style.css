@@ -259,6 +259,13 @@ a:hover {
    ============================== */
 #about {
     background-color: whitesmoke;
+    overflow: visible;
+}
+
+#about img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 #about h6 {
