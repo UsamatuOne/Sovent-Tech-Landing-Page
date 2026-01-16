@@ -23,12 +23,15 @@ barBtn.addEventListener('click', () => {
 const getsBtns = document.querySelectorAll('.get-s-btn');
 
 getsBtns.forEach((btn) => {
+
     btn.addEventListener('mouseenter', () => {
         btn.classList.add('get-s-btn-hover');
     });
+
     btn.addEventListener('mouseleave', () => {
         btn.classList.remove('get-s-btn-hover');
     });
+
 });
 
 
@@ -81,11 +84,57 @@ gsap.fromTo(
 );
 
 
+/*
+   =====================================================
+   ================== SERVICES SECTION =================
+   =====================================================
+   */
+const cards = document.querySelectorAll('.card');
+
+cards.forEach(card => {
+    const cardIcon = card.querySelector('.card-icon');
+
+    card.addEventListener('mouseenter', () => {
+        cardIcon.classList.add('card-icon-hover');
+    });
+
+    card.addEventListener('mouseleave', () => {
+        cardIcon.classList.remove('card-icon-hover');
+    });
+});
 
 
 /*
    =====================================================
-   ================== HERO SECTION =====================
+   ================== SOLUTIONS SECTION ================
    =====================================================
    */
 
+cards.forEach((card) => {
+    const cardImg = card.querySelector('.card-img-top');
+
+    card.addEventListener('mouseenter', () => {
+        cardImg.classList.add('card-img-top-hover');
+    })
+
+    card.addEventListener('mouseleave', () => {
+        cardImg.classList.remove('card-img-top-hover');
+    })
+})
+
+/*
+   =====================================================
+   ================== FOOTER SECTION ================
+   =====================================================
+   */
+
+//    date change
+
+const dateEl = document.querySelector('#date');
+
+const time = new Date;
+
+const date = time.getFullYear();
+
+dateEl.textContent = ` © ${date} Sovent-Tech. All
+                    rights reserved.`;

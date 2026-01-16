@@ -5,16 +5,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Soventtech Website</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -35,11 +42,12 @@
 
             <div class="d-none d-lg-block lg-nav">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="#hom">Home</a>
                     <a class="nav-link" href="#about">About</a>
-                    <a class="nav-link" href="#">Services</a>
-                    <a class="nav-link" href="#">Solutions</a>
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#services">Services</a>
+                    <a class="nav-link" href="#solutions">Solutions</a>
+                    <a class="nav-link" href="#team">Team</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </div>
             </div>
             <button class="get-s-btn ms-auto d-none d-lg-block border-0">Get Started</button>
@@ -50,11 +58,12 @@
 
             <div class="navbar-small-close">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="#hom">Home</a>
                     <a class="nav-link" href="#about">About</a>
-                    <a class="nav-link" href="#">Services</a>
-                    <a class="nav-link" href="#">Solutions</a>
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#services">Services</a>
+                    <a class="nav-link" href="#solutions">Solutions</a>
+                    <a class="nav-link" href="#team">Team</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                     <button class="get-s-btn-sm border-0">Get Started</button>
                 </div>
             </div>
@@ -71,7 +80,7 @@
      -->
 
     <div class="hidden-background" id="home"></div>
-    <section class="hero-bg align-items-center justify-content-center">
+    <section class="hero-bg align-items-center justify-content-center" id="hom">
         <div class="row justify-content-center align-items-center text-center mt-5 pt-5">
 
             <div class="col-8 text-center g-5">
@@ -121,25 +130,398 @@
                     business challenges.
                 </p>
                 <div class="row contact-num-con">
-                    <div class="col-4">
+                    <div class="col-4 border-end mb-3">
                         <span class="pro-num">50+</span>
                         <p>Project Delivered</p>
-                        <button class="get-s-btn border-0 fs-6">Get Started</button>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 border-end mb-3">
                         <span class=" pro-num"> 30+ </span>
                         <p>Happy Clients</p>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 mb-3">
                         <span class="pro-num"> 98%</span>
                         <p>Success Rate</p>
                     </div>
+                    <button class="get-s-btn border-0 fs-6" style="width: 170px;">Learn Our Story</button>
                 </div>
 
             </div>
         </div>
 
     </section>
+
+    <section class="align-items-center justify-content-center p-5" id="services">
+        <div class="row mb-5">
+            <div class="col-5 ms-auto  col-md-12 mb-5 mb-md-0">
+                <span class="fs-1 fw-bold">Our Services</span>
+            </div>
+            <div class="col-md-4 ms-auto  col-12">
+                <span class="bg-dark text-light p-3 rounded-5">WHAT WE DO</span>
+                <p class="mt-3">
+                    Comprehensive software solutions tailored to transform your business operations and accelerate
+                    growth.
+                </p>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card card-dark">
+                    <img src="./images/programming-card-icon.png" class="card-icon">
+                    <div class="card-body">
+                        <h5 class="card-title">Custom Software Development</h5>
+                        <p class="card-text">Tailored software solutions designed to meet your unique business
+                            requirements and drive operational excellence.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-dark">
+                    <img src="./images/cloud-card-icon.png" class="card-icon" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cloud Solutions</h5>
+                        <p class="card-text">Scalable cloud infrastructure and migration services to enhance
+                            flexibility, security, and performance.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-dark">
+                    <img src="./images/ai-card-icon.png" class="card-icon" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">AI Integration</h5>
+                        <p class="card-text">Leverage artificial intelligence and machine learning to automate processes
+                            and gain actionable insights.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-dark">
+                    <img src="./images/data-card-icon.png" class="card-icon" alt="..." style="width: 150px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Analytics</h5>
+                        <p class="card-text">Transform raw data into strategic intelligence with advanced analytics and
+                            visualization tools.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-dark">
+                    <img src="./images/mobile-card-icon.png" class="card-icon" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mobile Applications</h5>
+                        <p class="card-text">Native and cross-platform mobile apps that deliver exceptional user
+                            experiences on any device.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-dark">
+                    <img src="./images/enterprise-card-icon.png" class="card-icon" style="width: 120px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Enterprise Systems</h5>
+                        <p class="card-text">Robust enterprise resource planning and management systems to streamline
+                            your operations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="align-items-center justify-content-center p-5 m-5" id="solutions">
+        <div class="s-text-div text-center mb-5">
+            <h6 class="text-center">INDUSTRIES WE SERVE</h6>
+            <h1 class="h1 fw-bold">Solutions</h1>
+            <p>Industry-specific software solutions designed to address unique challenges and drive measurable results
+            </p>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 card-con">
+            <div class="col">
+                <div class="card p-0">
+                    <img src="./images/healthcare-img.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Healthcare Management</h5>
+                        <p class="card-text  border-bottom pb-5">
+                            Comprehensive patient management and
+                            electronic health
+                            record systems for
+                            modern healthcare facilities.</p>
+
+                        <div class="price-div">
+                            <h6>Starting at</h6>
+                            <div class="div">
+                                <h3>$2,499<span>/month</span></h3>
+                                <h6><i class="fa-solid fa-arrow-right fa-lg"></i></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card p-0">
+                    <img src="./images/finance-img.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Financial Analytics</h5>
+                        <p class="card-text  border-bottom pb-5">Advanced financial modeling and real-time analytics
+                            platforms for
+                            investment firms and banks.</p>
+
+                        <div class="price-div">
+                            <h6>Starting at</h6>
+                            <div class="div">
+                                <h3>$3,299<span>/month</span></h3>
+                                <h6><i class="fa-solid fa-arrow-right fa-lg"></i></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card p-0">
+                    <img src="./images/retail-img.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">E-Commerce Platform</h5>
+                        <p class="card-text  border-bottom pb-5">Scalable online retail solutions with inventory
+                            management and customer
+                            engagement tools.</p>
+
+                        <div class="price-div">
+                            <h6>Starting at</h6>
+                            <div class="div">
+                                <h3>$1,999<span>/month</span></h3>
+                                <h6><i class="fa-solid fa-arrow-right fa-lg"></i></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card p-0">
+                    <img src="./images/manufacturing-img.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Supply Chain Optimization</h5>
+                        <p class="card-text  border-bottom pb-5">End-to-end supply chain management with real-time
+                            tracking and predictive
+                            analytics.</p>
+
+                        <div class="price-div">
+                            <h6>Starting at</h6>
+                            <div class="div">
+                                <h3>$4,199<span>/month</span></h3>
+                                <h6><i class="fa-solid fa-arrow-right fa-lg"></i></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card p-0">
+                    <img src="./images/education-img.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Learning Management</h5>
+                        <p class="card-text border-bottom pb-5">Interactive educational platforms with course management
+                            and
+                            student
+                            engagement features.
+                        </p>
+
+                        <div class="price-div">
+                            <h6>Starting at</h6>
+                            <div class="div">
+                                <h3>$1,799<span>/month</span></h3>
+                                <h6><i class="fa-solid fa-arrow-right fa-lg"></i></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="align-items-center justify-content-center p-5" id="team">
+
+        <h1 class=""><span>Meet</span> The Innovators</h1>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card p-0">
+                    <img src="./images/team1-img.png" class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <h5 class="card-title">Ammar Bashir Haruna</h5>
+                        <p class="card-text">CEO & Founder</p>
+                        <h3 class="lg text-center">in</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card p-0">
+                    <img src="./images/team3-img.png" class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <h5 class="card-title">Abdulmalik Dayyabu</h5>
+                        <p class="card-text">Chief Technology Officer</p>
+                        <h3 class="lg text-center">in</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card p-0">
+                    <img src="./images/team2-img.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Usama Muhammad Haruna</h5>
+                        <p class="card-text">Head of Product.</p>
+                        <h3 class="lg text-center">in</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <div class="text-div text-center mb-5">
+            <h1 class="display-2 fw-bold">Ready to Transform Your Business?</h1>
+            <h5>Join 500+ companies leveraging our solutions</h5>
+        </div>
+
+        <div class="row justify-content-center">
+
+            <div class="getInTouch col-12 col-md-5 p-5">
+                <div class="text-div">
+                    <h3>Get In Touch</h3>
+                    <p>Let's discuss how we can help transform your business with innovative software solutions.</p>
+                </div>
+
+                <div class="address-div border-bottom pb-5">
+
+                    <div class="ec mb-3">
+                        <span class=".span">
+                            <i class="bi bi-envelope h4"></i>
+                        </span>
+                        <div class="ps-3 pt-2">
+                            <h4>Email</h4>
+                            <h6>contact@sovent-tech.com</h6>
+                        </div>
+                    </div>
+
+                    <div class="ec mb-3">
+                        <span class=".span">
+                            <i class="bi bi-telephone h4"></i>
+                        </span>
+                        <div class="ps-3 pt-2">
+                            <h4>Phone</h4>
+                            <h6>+234 7085938473</h6>
+                        </div>
+                    </div>
+
+                    <div class="ec mb-3">
+                        <span class=".span">
+                            <i class="bi bi-geo-alt h4"></i>
+                        </span>
+                        <div class="ps-3 pt-2">
+                            <h4>Office</h4>
+                            <h6>Nigeria, Kano State</h6>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="follow-us-div">
+                    <p class="mt-3">Follow Us</p>
+                    <div class="follow-icon">
+                        <span><i class="fa-brands fa-linkedin-in"></i></span>
+                        <span><i class="fa-brands fa-x-twitter"></i></span>
+                        <span><i class="fa-brands fa-github"></i></span>
+                        <span><i class="fa-brands fa-youtube"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <form class="p-5 align-items-center justify-content-center col-12 col-md-5 text-center">
+                <div class="mb-3 text-start">
+                    <label for="name" class="form-label">Full Name *</label>
+                    <input type="name" class="form-control" id="name" aria-describedby="nameHelp"
+                        placeholder="Usama Muhammad Haruna">
+                </div>
+                <div class="mb-3 text-start">
+                    <label for="email" class="form-label">Email address *</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                        placeholder="soventtech@company.com">
+                </div>
+                <div class="mb-3 text-start">
+                    <label for="companyName" class="form-label">Company Name</label>
+                    <input type="text" class="form-control" id="companyName" placeholder="Your Company">
+                </div>
+                <div class="mb-3 text-start">
+                    <label for="phoneNumber" class="form-label">Phone Number</label>
+                    <input type="text" class="form-control" id="phoneNumber" placeholder="+234 7085938473">
+                </div>
+                <div class="form-floating mb-5">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                        style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Tell us about your project</label>
+                </div>
+                <button class="get-s-btn border-0 fs-6 p-2" style="width: 250px;">Send Messenge</button>
+            </form>
+
+
+        </div>
+    </section>
+
+    <footer class="align-items-center justify-content-center border-top p-5" id="footer">
+        <div class="row">
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-5">
+                <div class="f-lg">
+                    <div class="logo">
+                    </div>
+                    <h1 class="navbar-brand fs-5 me-auto text-light" href="#">Sovent-Tech</h1>
+                </div>
+                <p>Transforming enterprises through intelligent software innovation and cutting-edge technology
+                    solutions.
+                </p>
+                <div class="follow-icon">
+                    <span><i class="fa-brands fa-linkedin-in"></i></span>
+                    <span><i class="fa-brands fa-x-twitter"></i></span>
+                    <span><i class="fa-brands fa-github"></i></span>
+                    <span><i class="fa-brands fa-youtube"></i></span>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-5">
+                <h6>Company</h6>
+                <a href="">About Us</a>
+                <a href="">Careers</a>
+                <a href="">Press</a>
+                <a href="">Partners</a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 pb-5">
+                <h6>Solutions</h6>
+                <a href="">By Industry</a>
+                <a href="">By Size</a>
+                <a href="">Case Studies</a>
+                <a href="">Pricing</a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <h6>Resources</h6>
+                <a href="">Blog</a>
+                <a href="">Documentation</a>
+                <a href="">API Reference</a>
+                <a href="">Support</a>
+            </div>
+            <div class="row mt-5 pt-5 border-top text-center justify-content-center">
+                <p class="col-md-6 col-12 p-2 justify-content-center"> <span id="date"> </span></p>
+                <div class="div col-md-6 col-12 justify-content-center ">
+                    <a href="" class="p-2">Privacy Policy</a>
+                    <a href="" class="p-2">Terms of Service</a>
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
 
 
 
