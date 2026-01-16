@@ -487,9 +487,9 @@ p {
    SECTIONS
    ============================== */
 
-section {
+/* section {
     padding: 100px 0;
-}
+} */
 
 .bg-section {
     background-color: var(--color-bg-section);
