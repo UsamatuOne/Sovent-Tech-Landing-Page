@@ -51,6 +51,17 @@ bgLogic.addEventListener('click', () => {
     bgLogic.classList.remove('hidden-background-open-nav');
 })
 
+// close navbar for each navlink logic 
+const navLink = document.querySelectorAll('.nav-link');
+
+navLink.forEach((link) => {
+
+    link.addEventListener('click', () => {
+        navBar.classList.remove('navbar-small-open');
+        bgLogic.classList.remove('hidden-background-open-nav');
+    })
+})
+
 // navbar background when scrolling
 gsap.registerPlugin(ScrollTrigger);
 gsap.fromTo(
