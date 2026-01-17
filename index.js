@@ -44,6 +44,10 @@ getsBtnSm.addEventListener('mouseenter', () => {
 getsBtnSm.addEventListener('mouseleave', () => {
     getsBtnSm.classList.toggle('get-s-btn-hover')
 })
+getsBtnSm.addEventListener('click', () => {
+    navBar.classList.remove('navbar-small-open');
+    bgLogic.classList.remove('hidden-background-open-nav');
+})
 
 // hidden background close navbar logic
 bgLogic.addEventListener('click', () => {
